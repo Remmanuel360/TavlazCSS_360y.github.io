@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(241, 229, 202);
+    margin: 40px;
+}
+.menu1 ul
+{
+    display: flex; /*Muestra en la misma  linea visual*/
+    padding: 0; /*Adapatamos espacio*/
+    margin:0;
+    list-style: none;/*Limpiamos el estilo si es que tiene*/
+}
+
+.menu1 .Titulos{
+    display: flex; /*Hace que el elemento se representado en un bloque*/
+    padding: 1.5em 3.5em; /* Ajuste del padding 1em es para arreglarlo arriba y abajo y 2em es para arreeglarlo izquierda derecha*/
+    background-color:#3565eb; /*Pone color al elemento*/
+    text-decoration: none; /*Elimina el estilo si es que hay subrayado o algo mas*/ 
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace que la letra sea más gruesa */
+    font-family: 'Arial', sans-serif; /* Usa una fuente más limpia */
+    color: #70c5ed; /*Definimos el color del texto*/
+    border-top-left-radius: 10px; /* Solo bordea la esquina superior izquierda */
+    border-bottom-left-radius: 10px; /* Solo bordea la esquina inferior izquierda */
+}
+.menu1 li:last-child a {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.menu1 a
+{
+    display: block; /*Hace que el elemento se representado en un bloque*/
+    padding: 1.5em 2em; /* Ajuste del padding 1em es para arreglarlo arriba y abajo y 2em es para arreeglarlo izquierda derecha*/
+    background-color:#3565eb; /*Pone color al elemento*/
+    text-decoration: none; /*Elimina el estilo si es que hay subrayado o algo mas*/ 
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace que la letra sea más gruesa */
+    font-family: 'Arial', sans-serif; /* Usa una fuente más limpia */
+    color: #ffffff; /*Definimos el color del texto*/
+    transition: background-color 0.3s; /*Transición suave para el hover*/
+}
+
+.menu1 a:hover
+{
+    background-color:#8265e2; /*Damos color al hover*/
+    color: #70c5ed; /*Definimos el color del texto*/
+}
+
+.nav ul li
+{
+    display: flex; /*Muestra en la misma  linea visual*/
+    padding: 0; /*Adapatamos espacio*/
+    margin:0;
+    list-style: none;/*Limpiamos el estilo si es que tiene*/
+}
+.nav 
+{
+    display: block; /*Hace que el elemento se representado en un bloque*/
+    padding: 1em 2em; /* Ajuste del padding 1em es para arreglarlo arriba y abajo y 2em es para arreglarlo izquierda derecha */
+    background-color:#62789b; /*Pone color al elemento */
+    text-decoration: none; /*Elimina el estilo si es que hay subrayado o algo mas*/ 
+    color: #1a1d26; /*Definimos el color del texto*/
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+div.bloque1{ /*Estilos de bloque 1*/
+    position: relative;/*Tipo de posisionamiento del bloque respecto a us posicion original*/
+    padding: 5px;
+    background-color: rgb(125, 129, 231); /*Color del fondo*/
+    width: 800px; /*ancho del bloque 1*/
+    height: 400px; /*alto del bloque 1*/
+    border-radius: 3%; /*curvas en las esquinas del bloque*/
+    border: 2px solid #031355;
+    z-index: 700; /*Capa en la que se encuentra*/
+}
+
+
+.imagen1{
+    position: absolute; /*Tipo de posisionamiento del bloque*/
+    left: 120%; /* Mueve la imagen fuera del bloque */
+    top: 10%; /* Mueve hacia abajo respecto al bloque padre */
+    z-index: 800;
+}
+#tabla{
+    background-color: rgba(142, 6, 239, 0.421) !important;
+}
+#tabla th{
+    background-color: rgba(142, 6, 239, 0.699) !important;
+}
+#javascript{
+    position: relative;/*Tipo de posisionamiento del bloque respecto a su posicion original*/
+    padding: 5px;
+    background-color: rgb(125, 129, 231); /*Color del fondo*/
+    width: 800px; /*ancho del bloque 1*/
+    height: 400px; /*alto del bloque 1*/
+    border-radius: 3%; /*curvas en las esquinas del bloque*/
+    border: 2px solid #031355;
+    z-index: 700; /*Capa en la que se encuentra*/
+}
+.imagen2{
+    position: absolute;
+    left: 120%; /* Mueve la imagen fuera del bloque */
+    top: 10%; /* Mueve hacia abajo respecto al bloque padre */
+    z-index: 800;
+}
+
+@media (max-width: 768px) {
+    .menu1 ul {
+        flex-direction: column; /* Cambia la dirección del menú a columna */
+    }
+
+    .menu1 ul li {
+        width: 80%; /* Asegura que cada elemento ocupe el 100% del ancho */
+    }
+    .menu1 a {
+        padding: 1em; /* Mantiene el tamaño adecuado */
+        text-align: center; /* Centra el texto en los elementos del menú */
+    }
+}

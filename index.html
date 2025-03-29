@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla CSS</title> <!--Nombre de la pagina-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  <!--Abro el body-->
+    <header>
+            <nav class="menu1">
+                <ul> <!--Lista anidada del menu-->
+                    <li class="Titulos">Contenido</li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#tabla">Tabla</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section id="css">  <!--Selection de css-->
+    <h1>Hablemos sobre CSS</h1> <!--Titulo 1-->
+    <div class="bloque1"> <!--creo bloque para modificar apariencia-->
+    <h3>¿Que es?</h3> 
+    <p>CSS, o "Cascading Style Sheets" (Hojas de Estilo en Cascada), es un lenguaje de diseño gráfico que se utiliza para controlar 
+        la presentación de documentos escritos en HTML o XML. Permite aplicar estilos como colores, fuentes, márgenes y disposición 
+        de los elementos en una página web. Gracias a CSS, es posible separar el contenido de la presentación, facilitando el 
+        mantenimiento y la flexibilidad en el diseño de sitios web. </p>
+    <br>
+    <h3>Importancia en el desarrollo web</h3>
+    <p>CSS es fundamental en el desarrollo web porque permite separar la estructura del contenido de su presentación visual, facilitando 
+        el mantenimiento y la coherencia del diseño en múltiples páginas. También es clave para la adaptabilidad, ya que permite crear 
+        sitios responsivos que se ajustan a diferentes dispositivos, mejorando la experiencia del usuario.
+
+        Además, optimiza el rendimiento del sitio al reducir la redundancia de código y mejorar los tiempos de carga. Esto no solo 
+        beneficia la navegación, sino que también contribuye al posicionamiento en buscadores. En resumen, CSS es esencial para diseñar 
+        sitios web atractivos, accesibles y eficientes.</p>
+    <a href="https://developer.mozilla.org/es/docs/conflicting/Learn_web_development/Core/Styling_basics_b957eec7deaf1ea2b20721d6838ea6e1" target="MDN CSS">
+        <img class="imagen1" src="Imagenes/logocss.png" width="200" height="200" alt="logocss"></a> <!--Agrego la etiqueta "a" para que la imagen rediriga a la pagina-->
+    </div><!--Cierro bloque-->
+        
+        
+    <br>
+    
+    </section>
+    <h3>Algunos Atributos de CSS</h3> <!--Ingreso la tabla de atributos-->
+    <br>
+    <section id="tabla">  <!--Selection de tabla-->
+    <table border="4"> <!--Inicio la tabla-->
+        <div class="columnas">
+        <tr> <!--Ingreso columnas-->
+            <th>Nombre del atributo</th>
+            <th>Descripción</th>
+            <th>Valores posibles</th>
+            <th>Ejemplo de uso</th>
+            <th>Imagen representativa</th>
+            <th>Fuente de información</th>
+        </tr>
+        </div>
+        <tr> <!--Atributo 1-->
+            <td>font-size</td>
+            <td>Define el tamaño de la fuente del texto</td>
+            <td>px (pixeles), % (porcentaje), em (relativo al tamaño del elemento padre), rem (relativo a la raíz del documento)</td>
+            <td><img width="400" height="100" src="Imagenes/cap1.png" alt="cap1"></td>
+            <td><img width="250" height="150" src="Imagenes/Img1.jpg" alt="Img1" > </td>
+            <td><a href="https://plumgroveinc.com/choosing-a-font-for-print-2/">Plum Grove</a></td>
+        </tr>
+        <tr> <!--Atributo 2-->
+            <td>border-radius</td>
+            <td>Redondea las esquinas de un elemento</td>
+            <td>px o % (define el grado de redondez).</td>
+            <td><img width="400" height="100" src="Imagenes/cap2.png" alt="cap2"></td>
+            <td><img width="250" height="150" src="Imagenes/Img2.jpg" alt="Img2" > </td>
+            <td><a href="https://css-irl.info/logical-border-radius/">Logical Border Radius</a></td>
+        </tr>
+        <tr> <!--Atributo 3-->
+            <td>display</td>
+            <td>Controla cómo se muestra un elemento en la página</td>
+            <td>block=Ocupa todo el ancho disponible, inline=No genera salto de línea, inline-block=Similar a inline, pero permite 
+                definir dimensiones, none=Oculta el elemento</td>
+            <td><img width="400" height="100"  src="Imagenes/cap3.png" alt="cap3"></td>
+            <td><img width="250" height="150" src="Imagenes/Img3.jpg" alt="Img3" > </td>
+            <td><a href="https://www.youtube.com/watch?v=dPfn_PdZoUU">YouTube</a></td>
+        </tr>
+        <tr> <!--Atributo 4-->
+            <td>flexbox (display: flex;)</td>
+            <td>Convierte un contenedor en un contenedor flexible para organizar elementos internos</td>
+            <td>display: flex; (activa el modelo flexbox), justify-content: center; (centra horizontalmente), align-items: center; 
+                (centra verticalmente).</td>
+            <td><img width="400" height="100" src="Imagenes/cap4.png" alt="cap4"></td>
+            <td><img width="250" height="150" src="Imagenes/Img4.jpg" alt="Img4" > </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/CSS_layout/Flexbox">MDN</a></td>
+        </tr>
+        <tr> <!--Atributo 5-->
+            <td>position</td>
+            <td>Controla la posición de un elemento en la página</td>
+            <td>static (posición por defecto), relative (posiciona el elemento respecto a su posición original), absolute 
+                (posiciona respecto a su primer ancestro con position: relative;), fixed (se mantiene en la misma posición al hacer 
+                scroll), sticky (se comporta como relative hasta cierto punto, luego se fija).</td>
+            <td><img width="400" height="100" src="Imagenes/cap5.png" alt="cap5"></td>
+            <td><img width="250" height="150" src="Imagenes/Img5.jpg" alt="Img5" > </td>
+            <td><a href="https://medium.com/baakademi/css-position-property-69d0596baf3c"> baakademi</a></td>
+        </tr>
+        <tr> <!--Atributo 6-->
+            <td>box-shadow</td>
+            <td>Agrega sombra a un elemento</td>
+            <td>px y color</td>
+            <td><img width="400" height="100" src="Imagenes/cap6.png" alt="cap6"></td>
+            <td><img width="250" height="150" src="Imagenes/Img6.jpg" alt="Img6" > </td>
+            <td><a href="https://front-end-tools.com/en/generateBoxshadow/">Front-end Tools</a></td>
+        </tr>
+        <tr> <!--Atributo 7-->
+            <td>overflow</td>
+            <td>Controla cómo se maneja el contenido que se desborda de un contenedor</td>
+            <td>visible (contenido visible aunque se desborde), hidden (oculta el contenido que se sale del contenedor), scroll 
+                (agrega una barra de desplazamiento), auto (agrega la barra solo si es necesario).</td>
+            <td><img width="400" height="100" src="Imagenes/cap7.png" alt="cap7"></td>
+            <td><img width="250" height="150" src="Imagenes/Img7.jpg" alt="Img7" > </td>
+            <td><a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=743:overflow-css-scroll-overflow-x-overflow-y-propiedad-visibility-visible-hidden-collapse-ejemplos-cu01038d&catid=75&Itemid=203">aprenderaprogramar.com</a></td>
+        </tr>
+        <tr> <!--Atributo 8-->
+            <td>z-index</td>
+            <td>Define el orden de apilamiento de los elementos (qué elemento se muestra encima de otro)</td>
+            <td>Un número (z-index: 1; está por encima de z-index: 0;), auto (por defecto).</td>
+            <td><img width="400" height="100" src="Imagenes/cap8.png" alt="cap8"></td>
+            <td><img width="250" height="150" src="Imagenes/Img8.jpg" alt="Img8" > </td>
+            <td><a href="https://dev.to/chintanonweb/beyond-the-basics-mastering-z-index-in-css-42fp">DEV Community</a></td>
+        </tr>
+        <tr> <!--Atributo 9-->
+            <td>opacity</td>
+            <td> Controla la transparencia del elemento</td>
+            <td>opacity: 1; (totalmente visible), opacity: 0.5; (semi-transparente), opacity: 0; (completamente invisible).</td>
+            <td><img width="400" height="100" src="Imagenes/cap9.png" alt="cap9"></td>
+            <td><img width="250" height="150" src="Imagenes/Img9.jpg" alt="Img9" > </td>
+            <td><a href="https://mgearon.com/css/css-opacity/">CSS Essential Guides</a></td>
+        </tr>
+        <tr> <!--Atributo 10-->
+            <td>margin y padding</td>
+            <td>Margin define el espacio exterior alrededor del elemento y padding define el espacio interior dentro del elemento</td>
+            <td>px (pixeles), % (porcentaje), em (relativo al tamaño del elemento padre), rem (relativo a la raíz del documento)</td>
+            <td><img width="400" height="100" src="Imagenes/cap10.png" alt="cap10"></td>
+            <td><img width="250" height="150" src="Imagenes/Img10.jpg" alt="Img10" > </td>
+            <td><a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=732:concepto-de-margen-y-relleno-css-diferencias-entre-margin-y-padding-css-box-model-ejemplos-cu01028d&catid=75&Itemid=203">aprenderaprogramar.com</a></td>
+        </tr>
+        <tr> <!--Atributo 11-->
+            <td>text-align</td>
+            <td>Controla la alineación del texto dentro de un elemento</td>
+            <td>left=Alinea el texto a la izquierda, right=Alinea el texto a la derecha, center=Centra el texto, justify=Justifica el 
+                texto (alineado a ambos lados).</td>
+            <td><img width="400" height="100" src="Imagenes/cap11.png" alt="cap11"></td>
+            <td><img width="250" height="150" src="Imagenes/Img11.jpg" alt="Img11" > </td>
+            <td><a href="https://wildlearner.com/learn/course/css/styling/text/text-alignment/">WildLearner</a></td>
+        </tr>
+        <tr> <!--Atributo 12-->
+            <td>cursor</td>
+            <td>Define la apariencia del cursor cuando pasa sobre un elemento</td>
+            <td>default=Cursor normal, pointer=Manito, para indicar enlaces o elementos clickeables, text=Cursor de texto, not-allowed
+                =Indica que la acción no está permitida.</td>
+            <td><img width="400" height="100" src="Imagenes/cap12.png" alt="cap12"></td>
+            <td><img width="250" height="150" src="Imagenes/Img12.jpg" alt="Img12" > </td>
+            <td><a href="https://blog.replaybird.com/how-to-change-mouse-cursor-with-css-2/">ReplayBird</a></td>
+        </tr>
+        <tr> <!--Atributo 13-->
+            <td>visibility</td>
+            <td>Controla si un elemento es visible o no sin afectar el diseño</td>
+            <td>visible=Muestra el elemento, hidden=Oculta el elemento pero mantiene su espacio en la página.</td>
+            <td><img width="400" height="100" src="Imagenes/cap13.png" alt="cap13"></td>
+            <td><img width="250" height="150" src="Imagenes/Img13.jpg" alt="Img13" > </td>
+            <td><a href="https://www.instagram.com/sobrecodigo/p/CiLn3PCOVG0/?img_index=1">Instagram@sobrecodigo</a></td>
+        </tr>
+        <tr> <!--Atributo 14-->
+            <td>background-image</td>
+            <td>Permite establecer una imagen como fondo de un elemento</td>
+            <td>url("imagen.jpg")=Usa una imagen como fondo, none=No hay imagen de fondo.</td>
+            <td><img width="400" height="100" src="Imagenes/cap14.png" alt="cap14"></td>
+            <td><img width="250" height="150" src="Imagenes/Img14.jpg" alt="Img14" > </td>
+            <td><a href="https://www.programiz.com/css/background-image">programiz</a></td>
+        </tr>
+    </table>
+    
+</section>
+<br>
+    <section id="javascript">  <!--Selection de javascript-->
+    <h1>Hablemos sobre JavaScript</h1> <!--Titulo 2-->
+    <br>
+    <h3>¿Que es?</h3> 
+    <p>JavaScript es un lenguaje de programación que permite crear contenido dinámico en las páginas web, controlar elementos 
+        multimedia y animar imágenes, entre otras funcionalidades. Fue desarrollado por Brendan Eich y se ha convertido en una 
+        herramienta esencial para añadir interactividad a los sitios web.</p>
+    <br>
+    <h3>Importancia en el desarrollo web</h3>
+    <p>JavaScript es fundamental en el desarrollo web moderno, ya que permite a los desarrolladores crear experiencias interactivas y 
+        dinámicas para los usuarios. Al combinarse con HTML y CSS, forma la base de las tecnologías web del lado del cliente, 
+        facilitando la creación de interfaces atractivas y funcionales.
+
+        Además, JavaScript es esencial para la creación de aplicaciones web modernas, permitiendo la actualización de contenido sin 
+        necesidad de recargar la página y mejorando la experiencia del usuario.
+        
+        En resumen, JavaScript es un componente clave en el desarrollo web, ya que posibilita la creación de sitios interactivos, 
+        dinámicos y adaptados a las necesidades actuales de los usuarios.</p>
+        <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting/What_is_JavaScript" target="MDN Web Docs">
+            <img class="imagen2" width="250" height="250" src="Imagenes/logojavascrpt.png" alt="logojavascrpt"></a>
+            <br>
+    <br>
+    </section> 
+</body>
+<footer>
+    <br>
+    Diseñado por Emmanuel Redondo Correa
+</footer>
+</html>
